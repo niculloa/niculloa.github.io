@@ -72,6 +72,10 @@ rect(100, 150, 80, 80);  // Draw white rect using RADIUS mode los primeros valor
 rectMode(CENTER);  // Set rectMode to CENTER
 fill(205, 0, 205);  // Set fill to gray
 rect(100, 150, 80, 80);  // Draw gray rect using CENTER mode  
+translate(width/3, height/2);
+rotate(PI/5.0);
+rect(-30, -30, 82, 82);
+
 
   
   
