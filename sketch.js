@@ -26,7 +26,7 @@ function nombreFuncion(){
 //La funcion setup se ejecuta una vez
 function setup() {
   //canvas es el lienzo  
-  createCanvas(400, 300);
+  createCanvas(500, 400);
   //background of course, es el color de fondo :)
   background(0,194, 160);
 }
@@ -63,8 +63,20 @@ function draw() {
  
  //esto seria una asignacion nueva a la variable global  
 //-->ESTO LO comenté por ahora--> diametro = diametro + 1; //irá ejecutando 60 veces por segundo por ende irá creciendo cada 1 segundo +1
+
+estilo3()  
+rectMode(RADIUS);  // Set rectMode to RADIUS
+//fill(255);  // Set fill to white
+rect(100, 150, 80, 80);  // Draw white rect using RADIUS mode los primeros valores son X-Y
+
+rectMode(CENTER);  // Set rectMode to CENTER
+fill(205, 0, 205);  // Set fill to gray
+rect(100, 150, 80, 80);  // Draw gray rect using CENTER mode  
+
   
-}
+  
+  
+}//cierre de mi funcion draw
 
 //declaracion de funcion de estilo de elipse
 function estilo1(){
@@ -72,8 +84,16 @@ function estilo1(){
   stroke(210,0,100); //sólo el color del borde (rgb)
   fill(255,222,0); //relleno del circulo
 }
+
 function estilo2(){
   strokeWeight(1);//tamaño del borde(px)
   stroke(256,100,100); //sólo el color del borde (rgb)
   fill(165,202,0); //relleno del circulo
 }
+
+function estilo3(){
+  strokeWeight(4);//tamaño del borde(px)
+  stroke(0,155,255); //sólo el color del borde (rgb)
+  fill(255,0,0); //relleno del circulo
+}
+
